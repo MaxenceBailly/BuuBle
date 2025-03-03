@@ -1,0 +1,50 @@
+I. Objectifs du site
+L'objectif est de pouvoir apprendre une langue d'une manière originale et ludique en utilisant les meilleurs méthodes d'apprentissages d'un langues, c'est à dire :
+- apprendre surtout des phrases à la place du vocabulaire simple
+- se baser sur les 13 phrases de Tim Ferris
+- la répétition
+- lire des histoires, écouter de la musique, ...
+- parler (IA mais trop complexe pour le moment)
+- converser à l'écrit (avec IA par exemple mais aussi avec des vraies personnes)
+- des fiches concises pas trop longues, efficaces et ludiques
+- voir des vidéo, conversations, films et series dans la langue cible
+
+II. Fonctionnalités
+Programme d'apprentissage :
+- parcours d'apprentissage de phrase simples qui irontvers le complexe au fil de l'avancement, avec des petit quizz UTILES (à l'inverse de  ce qui se fait souvent)
+- section messagerie avec IA et vraies personnes
+- section apprentissage nombres
+- section apprentissage vocabulaire
+- section livre
+- section vidéo, films, series ...
+- section fiches d'apprentissages
+- section certification BuuBle (certifie un niveau de langue selon BuuBle)
+- section révisions des erreurs, permettant de revoir les erreurs récurrente afin de les corriger
+Système de niveau : Au fil de l'apprentissage un niveau sera la pour gamifier l'experience utilisateur. Il y aura d'ailleur un niveau pour chaque section (vocabulaire, chiffres, ..). Il faudra donc passer certains niveau dans ces sections pour pouvoir accéder à la suite de l'apprentissage
+Page de connexions : pouvoir se connecter au site -> redirige sur la page de profil
+Page de profil : Suivies des avancés (graphes, niveau, ..)
+Page de travail : lieu d'apprentissage avec les différentes section
+Page jeux ludiques : liste de jeux mise à disposition afin de retenir l'utilisateur tout en l'instruisant (les jeux auront une monnaie interne au site donc microtransactions possibles)
+Système d'abonnement : abonnement pas cher permettant de rémunérer l'hebergement et de faire du profit (à implenter pour plus tard bien évidemment)
+S'adapter à tout les âges, même pour les tout petits
+
+III. Conception du design
+palette de couleur chaude et reposante
+responsive pour que cela fonctionne sur mobile
+UX:
+- HUD relativement vide pour ne pas surcharger
+- menu en bas de page
+- profil en haut à gauche
+- menu (pour plus tard) milieu gauche
+
+IV. Choix des technologies
+Frontend: HTML, CSS, javascript
+Backend: javascript (Axio)
+Base de données: SQL, javascript (Nuxt ??)
+Hébergement: hébergeur gratuit pour le début
+
+V. Conception de la base de données
+USER: IDUser, name, email, password, created_at, updated_at  
+LANGUAGE_PROFILE: IDProfile, #user_id>USER>IDUser, language, level_general, level_numbers, level_vocabulary, level_phrases, level_conjugation, level_grammar  
+EXERCISE: IDExercise, source_language, target_language, sentence_source, sentence_target  
+PROGRESS: IDProgress, #profile_id>LANGUAGE_PROFILE>IDProfile, #exercise_id>EXERCISE>IDExercise, attempts, success_rate, last_attempt_date  

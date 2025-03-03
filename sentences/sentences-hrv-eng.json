@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "sentence": "Dobar dan!",
+        "translation": "Good day!"
+    },
+    {
+        "id": 2,
+        "sentence": "Kako si?",
+        "translation": "How are you?"
+    },
+    {
+        "id": 3,
+        "sentence": "Ja sam Alice.",
+        "translation": "I am Alice."
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Alice",
+        "username": "alice123",
+        "email": "alice@example.com",
+        "motherTongue": "English",
+        "language": "Croatian",
+        "level": 1,
+        "achievements": ["First sentence", "10 words learned"]
+    },
+    {
+        "id": 2,
+        "name": "Bob",
+        "username": "bob456",
+        "email": "bob@example.com",
+        "motherTongue": "French",
+        "language": "Espagnol",
+        "level": 3,
+        "achievements": ["First conversation", "50 words learned"]
+    }
+]
